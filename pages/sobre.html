@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre · AXIS Gestão e Processos</title>
+<meta name="description" content="AXIS — gestão como arte e engenharia. Propósito, princípios e tom de voz da consultoria.">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+.page-hero{min-height:52vh;display:flex;align-items:center;padding-top:var(--nav-h);background:var(--dk);position:relative;overflow:hidden;}
+.page-hero-inner{position:relative;z-index:2;padding:72px 0;}
+#proposito{background:var(--bg);padding:100px 0;}
+.proposito-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
+.proposito-visual{background:var(--pr);padding:56px 48px;position:relative;overflow:hidden;}
+.proposito-visual::before{content:'AXIS';font-family:var(--font-serif);font-size:140px;font-weight:900;color:var(--d);opacity:.04;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);white-space:nowrap;}
+.pv-inner{position:relative;z-index:2;}
+.pv-q{font-family:var(--font-serif);font-size:60px;color:var(--d);opacity:.3;line-height:.5;margin-bottom:12px;}
+.pv-text{font-family:var(--font-serif);font-size:20px;font-style:italic;color:var(--cr);line-height:1.5;}
+#principios{background:var(--gr);padding:100px 0;}
+.princ-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin-top:52px;}
+.princ-item{background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.06);padding:36px 32px;transition:border-color .25s;}
+.princ-item:hover{border-color:rgba(197,160,101,.2);}
+.princ-num{font-family:var(--font-serif);font-size:11px;color:var(--d);letter-spacing:2px;margin-bottom:14px;display:block;}
+.princ-title{font-family:var(--font-serif);font-size:20px;font-weight:700;color:var(--cr);margin-bottom:10px;}
+.princ-desc{font-size:13px;color:rgba(255,255,255,.35);line-height:1.7;font-weight:300;}
+#tom{background:var(--cr);padding:100px 0;}
+.tom-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:52px;}
+.tom-col{background:var(--wh);border:1px solid var(--ar);padding:36px 32px;}
+.tom-col.nao{background:var(--ar);}
+.tom-col-title{font-size:9px;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:20px;}
+.tom-col-title.sim{color:var(--v);}
+.tom-col-title.nao{color:var(--gr);opacity:.45;}
+.tom-tags{display:flex;flex-direction:column;gap:10px;}
+.tom-tag{font-size:13px;color:var(--gr);display:flex;align-items:center;gap:10px;}
+.tom-tag.ok::before{content:'+';color:var(--v);font-weight:700;font-size:16px;}
+.tom-tag.no::before{content:'−';color:var(--gr);opacity:.4;font-size:16px;}
+#cta-final{background:var(--v);padding:80px 0;text-align:center;}
+@media(max-width:768px){.proposito-grid,.tom-grid{grid-template-columns:1fr;}.princ-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><span class="nav-logo-name">AXIS</span><span class="nav-logo-sub">Gestão e Processos</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="metodo.html">Método G.O.F.</a></li>
+      <li><a href="servicos.html">Serviços</a></li>
+      <li><a href="sobre.html" class="active">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li><a href="contato.html" class="nav-cta">Diagnóstico Gratuito</a></li>
+    </ul>
+    <button class="nav-burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile" id="nav-mobile">
+  <a href="../index.html">Início</a><a href="metodo.html">Método G.O.F.</a><a href="servicos.html">Serviços</a><a href="sobre.html">Sobre</a><a href="contato.html">Contato</a><a href="contato.html">Diagnóstico Gratuito</a>
+</div>
+
+<section class="page-hero">
+  <div class="hero-overlay"></div><div class="hero-grid-bg"></div>
+  <div class="hero-content"><div class="container"><div class="page-hero-inner">
+    <div class="eyebrow reveal">Quem Somos</div>
+    <h1 class="section-title light reveal delay-1" style="font-size:clamp(36px,5vw,62px);">Gestão como <em>arte</em> e <em>engenharia</em>.</h1>
+    <p class="section-sub light reveal delay-2">A AXIS é uma consultoria especializada em gestão para pequenos negócios. Nascemos da convicção de que faturar não é o mesmo que lucrar — e de que pequenos negócios merecem ferramentas e método antes reservados às grandes corporações.</p>
+  </div></div></div>
+</section>
+
+<section id="proposito">
+  <div class="container">
+    <div class="proposito-grid">
+      <div class="proposito-visual reveal">
+        <div class="pv-inner">
+          <div class="pv-q">"</div>
+          <p class="pv-text">Gerar lucro real e liberdade operacional para o dono do negócio — com estrutura, dados e método.</p>
+        </div>
+      </div>
+      <div class="reveal delay-1">
+        <div class="eyebrow">Propósito</div>
+        <h2 class="section-title dark">Por que <em>existimos</em></h2>
+        <div class="gold-line"></div>
+        <p style="font-size:15px;line-height:1.85;color:var(--gr);opacity:.7;font-weight:300;margin-bottom:20px;">Gerar lucro real e liberdade operacional para o dono do negócio — com estrutura, dados e método. Não com achismo, planilha esquecida ou esperança de que o próximo mês será diferente.</p>
+        <p style="font-size:15px;line-height:1.85;color:var(--gr);opacity:.7;font-weight:300;">Trabalhamos com empreendedores que querem mais do que faturar. Querem crescer com controle, previsibilidade e resultado real no caixa.</p>
+        <div style="margin-top:32px;">
+          <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--d);font-weight:600;margin-bottom:8px;">MADU GESTÃO EMPRESARIAL LTDA</div>
+          <div style="font-size:13px;color:var(--gr);opacity:.5;">CNPJ 65.723.134/0001-86</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="principios">
+  <div class="container">
+    <div class="eyebrow reveal" style="color:rgba(197,160,101,.7);">Princípios</div>
+    <h2 class="section-title light reveal delay-1">O que nos <em>orienta</em></h2>
+    <div class="princ-grid">
+      <div class="princ-item reveal"><span class="princ-num">01</span><div class="princ-title">Dado acima de opinião</div><p class="princ-desc">Decisões só são decisões quando têm número, fonte e responsável.</p></div>
+      <div class="princ-item reveal delay-1"><span class="princ-num">02</span><div class="princ-title">Método antes de esforço</div><p class="princ-desc">Trabalho duro sem sistema é apenas exaustão programada.</p></div>
+      <div class="princ-item reveal"><span class="princ-num">03</span><div class="princ-title">Clareza acima de jargão</div><p class="princ-desc">Se não dá para explicar ao dono em uma frase, não está pronto.</p></div>
+      <div class="princ-item reveal delay-1"><span class="princ-num">04</span><div class="princ-title">Resultado acima de relatório</div><p class="princ-desc">Diagnóstico bonito sem mudança no caixa é literatura.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="tom">
+  <div class="container">
+    <div class="eyebrow no-line reveal" style="color:var(--v);">Tom de Voz</div>
+    <h2 class="section-title dark reveal delay-1">Como <em>falamos</em></h2>
+    <div class="tom-grid">
+      <div class="tom-col reveal">
+        <div class="tom-col-title sim">Somos</div>
+        <div class="tom-tags">
+          <div class="tom-tag ok">Diretos</div>
+          <div class="tom-tag ok">Técnicos</div>
+          <div class="tom-tag ok">Sofisticados</div>
+          <div class="tom-tag ok">Atemporais</div>
+          <div class="tom-tag ok">Mensuráveis</div>
+        </div>
+      </div>
+      <div class="tom-col nao reveal delay-1">
+        <div class="tom-col-title nao">Não somos</div>
+        <div class="tom-tags">
+          <div class="tom-tag no">Coachzinho</div>
+          <div class="tom-tag no">Hype</div>
+          <div class="tom-tag no">Promessa fácil</div>
+          <div class="tom-tag no">Modismo passageiro</div>
+          <div class="tom-tag no">Achismo</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cta-final">
+  <div class="container" style="text-align:center;max-width:560px;">
+    <h2 class="section-title" style="color:var(--wh);margin-bottom:12px;">Pronto para fazer parte dos que <em>crescem com método?</em></h2>
+    <p style="font-size:15px;color:rgba(255,255,255,.5);margin-bottom:32px;font-weight:300;">30 minutos. Sem custo. Sem compromisso.</p>
+    <a href="contato.html" class="btn btn-gold">Começar Agora →</a>
+  </div>
+</section>
+
+<footer class="footer"><div class="container">
+  <div class="footer-grid">
+    <div><div class="footer-brand-name">AXIS</div><div class="footer-brand-sub">Gestão e Processos</div><p class="footer-desc">Consultoria especializada em gestão para pequenos negócios.</p></div>
+    <div><div class="footer-col-title">Navegar</div><ul class="footer-links"><li><a href="../index.html">Início</a></li><li><a href="metodo.html">Método G.O.F.</a></li><li><a href="servicos.html">Serviços</a></li><li><a href="sobre.html">Sobre</a></li><li><a href="contato.html">Contato</a></li></ul></div>
+    <div><div class="footer-col-title">Contato</div><ul class="footer-links"><li><a href="mailto:contato@axisge.com.br">contato@axisge.com.br</a></li><li><a href="https://wa.me/5527998845482" target="_blank">WhatsApp →</a></li><li><a href="https://instagram.com/axisgestaoeprocessos" target="_blank">@axisgestaoeprocessos</a></li></ul></div>
+  </div>
+  <div class="footer-divider"></div>
+  <div class="footer-bottom"><div class="footer-copy">© 2026 <span>AXIS · Gestão e Processos</span> · MADU GESTÃO EMPRESARIAL LTDA · CNPJ 65.723.134/0001-86</div><div class="footer-ig"><a href="https://instagram.com/axisgestaoeprocessos" target="_blank">Gestão · Organização · Finanças</a></div></div>
+</div></footer>
+<script src="../js/main.js"></script>
+</body></html>

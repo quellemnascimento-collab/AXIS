@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Serviços e Planos · AXIS Gestão e Processos</title>
+<meta name="description" content="Planos de consultoria AXIS: Essencial R$1.500, Profissional R$2.200, Completo R$3.000/mês. Diagnóstico gratuito.">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+.page-hero{min-height:46vh;display:flex;align-items:center;padding-top:var(--nav-h);background:var(--dk);position:relative;overflow:hidden;}
+.page-hero-inner{position:relative;z-index:2;padding:72px 0;}
+#planos{background:var(--bg);padding:100px 0;}
+.planos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:64px;}
+.plano-card{background:var(--wh);border:1px solid var(--ar);padding:44px 36px;position:relative;transition:border-color .25s,box-shadow .25s;}
+.plano-card:hover{border-color:var(--v2);box-shadow:0 8px 40px rgba(109,7,20,.07);}
+.plano-card.destaque{background:var(--cr);border-color:var(--v2);}
+.plano-badge{position:absolute;top:-1px;left:50%;transform:translateX(-50%);background:var(--v);color:var(--d);font-size:8px;letter-spacing:2px;font-weight:700;padding:5px 16px;white-space:nowrap;text-transform:uppercase;}
+.plano-nome{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--v);font-weight:600;margin-bottom:6px;}
+.plano-titulo{font-family:var(--font-serif);font-size:17px;font-weight:700;color:var(--pr);margin-bottom:6px;line-height:1.3;}
+.plano-publico{font-size:12px;color:var(--gr);opacity:.55;margin-bottom:24px;font-weight:300;}
+.plano-preco{font-family:var(--font-serif);font-size:40px;font-weight:700;color:var(--v);line-height:1;}
+.plano-periodo{font-size:12px;color:var(--gr);opacity:.5;margin-bottom:28px;letter-spacing:.5px;}
+.plano-divider{height:1px;background:var(--ar);margin:20px 0;}
+.plano-items{list-style:none;display:flex;flex-direction:column;gap:11px;margin-bottom:36px;}
+.plano-items li{font-size:13px;color:var(--gr);display:flex;align-items:flex-start;gap:10px;line-height:1.5;}
+.plano-items li.ok::before{content:'✓';color:var(--v);font-weight:700;flex-shrink:0;}
+.plano-items li.no{opacity:.3;}
+.plano-items li.no::before{content:'—';flex-shrink:0;}
+#condicoes{background:var(--pr);padding:100px 0;}
+.cond-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin-top:52px;}
+.cond-item{background:rgba(255,255,255,.02);border:1px solid rgba(197,160,101,.08);padding:28px 28px;}
+.cond-label{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--d);font-weight:600;margin-bottom:8px;}
+.cond-value{font-size:14px;color:var(--cr);line-height:1.5;}
+#naosabe{background:var(--v);padding:80px 0;text-align:center;}
+@media(max-width:1024px){.planos-grid{grid-template-columns:1fr;}.cond-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><span class="nav-logo-name">AXIS</span><span class="nav-logo-sub">Gestão e Processos</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="metodo.html">Método G.O.F.</a></li>
+      <li><a href="servicos.html" class="active">Serviços</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li><a href="contato.html" class="nav-cta">Diagnóstico Gratuito</a></li>
+    </ul>
+    <button class="nav-burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile" id="nav-mobile">
+  <a href="../index.html">Início</a><a href="metodo.html">Método G.O.F.</a><a href="servicos.html">Serviços</a><a href="sobre.html">Sobre</a><a href="contato.html">Contato</a><a href="contato.html">Diagnóstico Gratuito</a>
+</div>
+
+<section class="page-hero">
+  <div class="hero-overlay"></div><div class="hero-grid-bg"></div>
+  <div class="hero-content"><div class="container"><div class="page-hero-inner">
+    <div class="eyebrow reveal">Planos e Investimento</div>
+    <h1 class="section-title light reveal delay-1" style="font-size:clamp(34px,5vw,58px);">Escolha o plano para o<br><em>momento do seu negócio</em></h1>
+    <p class="section-sub light reveal delay-2">Todos os planos incluem diagnóstico inicial, dashboard de controle e suporte direto via WhatsApp.</p>
+  </div></div></div>
+</section>
+
+<section id="planos">
+  <div class="container">
+    <div class="planos-grid">
+
+      <div class="plano-card reveal">
+        <div class="plano-nome">Plano Essencial</div>
+        <div class="plano-titulo">Para começar a organizar a casa</div>
+        <div class="plano-publico">Negócios em fase de estruturação inicial</div>
+        <div class="plano-preco">R$1.500</div>
+        <div class="plano-periodo">/mês · mínimo 3 meses</div>
+        <div class="plano-divider"></div>
+        <ul class="plano-items">
+          <li class="ok">Diagnóstico financeiro inicial</li>
+          <li class="ok">Dashboard de controle de caixa</li>
+          <li class="ok">Organização de contas a pagar/receber</li>
+          <li class="ok">Suporte WhatsApp horário comercial</li>
+          <li class="ok">1 reunião de acompanhamento/mês</li>
+          <li class="no">Relatório mensal de resultado</li>
+          <li class="no">Análise de margem por produto</li>
+          <li class="no">Gestão de processos</li>
+          <li class="no">Estratégia de marketing</li>
+        </ul>
+        <a href="contato.html" class="btn btn-primary" style="width:100%;justify-content:center;">Contratar Essencial</a>
+      </div>
+
+      <div class="plano-card destaque reveal delay-1">
+        <div class="plano-badge">Mais Escolhido</div>
+        <div class="plano-nome">Plano Profissional</div>
+        <div class="plano-titulo">Para quem quer dado, não achismo</div>
+        <div class="plano-publico">Negócios prontos para escalar com método</div>
+        <div class="plano-preco">R$2.200</div>
+        <div class="plano-periodo">/mês · mínimo 3 meses</div>
+        <div class="plano-divider"></div>
+        <ul class="plano-items">
+          <li class="ok">Diagnóstico financeiro inicial</li>
+          <li class="ok">Dashboard de controle de caixa</li>
+          <li class="ok">Organização de contas a pagar/receber</li>
+          <li class="ok">Suporte WhatsApp estendido</li>
+          <li class="ok">2 reuniões de acompanhamento/mês</li>
+          <li class="ok">Relatório mensal de resultado</li>
+          <li class="ok">Análise de margem por produto</li>
+          <li class="ok">Gestão de processos administrativos</li>
+          <li class="no">Estratégia de marketing</li>
+        </ul>
+        <a href="contato.html" class="btn btn-primary" style="width:100%;justify-content:center;background:var(--v);">Contratar Profissional</a>
+      </div>
+
+      <div class="plano-card reveal delay-2">
+        <div class="plano-nome">Plano Completo</div>
+        <div class="plano-titulo">Sistema G.O.F. integral</div>
+        <div class="plano-publico">Para quem quer o método completo, sem deixar nada de fora</div>
+        <div class="plano-preco">R$3.000</div>
+        <div class="plano-periodo">/mês · mínimo 3 meses</div>
+        <div class="plano-divider"></div>
+        <ul class="plano-items">
+          <li class="ok">Diagnóstico financeiro inicial</li>
+          <li class="ok">Dashboard de controle de caixa</li>
+          <li class="ok">Organização de contas a pagar/receber</li>
+          <li class="ok">Suporte WhatsApp prioritário</li>
+          <li class="ok">4 reuniões de acompanhamento/mês</li>
+          <li class="ok">Relatório mensal de resultado</li>
+          <li class="ok">Análise de margem por produto</li>
+          <li class="ok">Gestão de processos administrativos</li>
+          <li class="ok">Planejamento financeiro trimestral</li>
+          <li class="ok">Estratégia e gestão de marketing</li>
+        </ul>
+        <a href="contato.html" class="btn btn-primary" style="width:100%;justify-content:center;">Contratar Completo</a>
+      </div>
+
+    </div>
+    <p style="text-align:center;font-size:12px;color:var(--gr);opacity:.45;margin-top:24px;font-weight:300;">Valores mensais para contratos com vigência mínima de 3 meses. Pagamento via PIX, boleto ou transferência até o 5º dia útil de cada mês. Após período mínimo, cancelamento sem multa com 30 dias de aviso prévio.</p>
+  </div>
+</section>
+
+<section id="condicoes">
+  <div class="container">
+    <div class="eyebrow reveal" style="color:rgba(197,160,101,.7);">Condições Comerciais</div>
+    <h2 class="section-title light reveal delay-1">Transparência <em>desde o início</em></h2>
+    <div class="cond-grid">
+      <div class="cond-item reveal"><div class="cond-label">Vigência mínima</div><div class="cond-value">3 meses (renovação automática mensal após)</div></div>
+      <div class="cond-item reveal delay-1"><div class="cond-label">Forma de pagamento</div><div class="cond-value">PIX, boleto bancário ou transferência</div></div>
+      <div class="cond-item reveal"><div class="cond-label">Vencimento</div><div class="cond-value">Até o 5º dia útil de cada mês</div></div>
+      <div class="cond-item reveal delay-1"><div class="cond-label">Início dos serviços</div><div class="cond-value">Em até 5 dias úteis após assinatura</div></div>
+      <div class="cond-item reveal"><div class="cond-label">Cancelamento</div><div class="cond-value">Aviso prévio de 30 dias, sem multa após mínimo</div></div>
+      <div class="cond-item reveal delay-1"><div class="cond-label">Ajuste anual</div><div class="cond-value">IPCA do período</div></div>
+      <div class="cond-item reveal"><div class="cond-label">Contrato</div><div class="cond-value">Digital — DocuSign ou WhatsApp</div></div>
+      <div class="cond-item reveal delay-1"><div class="cond-label">Garantia</div><div class="cond-value">30 dias sem compromisso</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="naosabe">
+  <div class="container" style="text-align:center;max-width:580px;">
+    <h2 class="section-title" style="color:var(--wh);margin-bottom:12px;">Não sabe qual plano <em>escolher?</em></h2>
+    <p style="font-size:15px;color:rgba(255,255,255,.5);margin-bottom:32px;font-weight:300;">No diagnóstico gratuito de 30 minutos, indicamos o plano ideal para o seu momento.</p>
+    <a href="contato.html" class="btn btn-gold">Falar com a AXIS →</a>
+  </div>
+</section>
+
+<footer class="footer"><div class="container">
+  <div class="footer-grid">
+    <div><div class="footer-brand-name">AXIS</div><div class="footer-brand-sub">Gestão e Processos</div><p class="footer-desc">Consultoria especializada em gestão para pequenos negócios.</p></div>
+    <div><div class="footer-col-title">Navegar</div><ul class="footer-links"><li><a href="../index.html">Início</a></li><li><a href="metodo.html">Método G.O.F.</a></li><li><a href="servicos.html">Serviços</a></li><li><a href="sobre.html">Sobre</a></li><li><a href="contato.html">Contato</a></li></ul></div>
+    <div><div class="footer-col-title">Contato</div><ul class="footer-links"><li><a href="mailto:contato@axisge.com.br">contato@axisge.com.br</a></li><li><a href="https://wa.me/5527998845482" target="_blank">WhatsApp →</a></li><li><a href="https://instagram.com/axisgestaoeprocessos" target="_blank">@axisgestaoeprocessos</a></li></ul></div>
+  </div>
+  <div class="footer-divider"></div>
+  <div class="footer-bottom"><div class="footer-copy">© 2026 <span>AXIS · Gestão e Processos</span> · MADU GESTÃO EMPRESARIAL LTDA · CNPJ 65.723.134/0001-86</div><div class="footer-ig"><a href="https://instagram.com/axisgestaoeprocessos" target="_blank">Gestão · Organização · Finanças</a></div></div>
+</div></footer>
+<script src="../js/main.js"></script>
+</body></html>
